@@ -1,0 +1,19 @@
+name = "mijxoo"
+compatibility_date = "2024-01-01"
+main = "src/index.js"
+workers_dev = true
+
+# KV 命名空间绑定 - 替换 YOUR_KV_NAMESPACE_ID 为实际的ID
+kv_namespaces = [
+  { binding = "MY_HOME_KV", id = "YOUR_KV_NAMESPACE_ID" }
+]
+
+# 可选：配置路由（如果你使用自定义域名）
+# routes = [
+#   { pattern = "mijxoo.com/manage", zone_name = "mijxoo.com" }
+# ]
+
+# 构建配置（如果没有构建步骤，可以注释掉或设为空）
+[build]
+# command = "npm run build"  # 如果你有构建步骤
+# 或者直接使用纯JS文件，无需构建命令
