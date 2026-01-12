@@ -1,6 +1,8 @@
 // API配置
 const API_BASE_URL = 'https://mjjxoo.mjjxoo-fd0.workers.dev/';
-
+"scripts": {
+  "build": "your-build-command"
+}
 // GitHub用户名将从API获取
 let GITHUB_USERNAME = 'IonRh'; // 默认值，将被API数据覆盖
 
